@@ -27,7 +27,7 @@ class Interface(object):
 
         self._contacts           = set()
 
-        self._filterdistance     = threshold_distance if threshold_type is "geometric" else threshold_distance + 15
+        self._filterdistance     = threshold_distance if threshold_type == "geometric" else threshold_distance + 15
         self._filtered           = None
 
         self._build()
